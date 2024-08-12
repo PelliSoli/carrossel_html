@@ -1,10 +1,10 @@
-body{
-   font-family: "Poppins", sans-serif; 
+body {
+   font-family: "Poppins", sans-serif;
    max-width: 1280px;
    margin: 0 auto;
 }
 
-.carrossel{
+.carrossel {
    position: fixed;
    top: 0;
    left: 0;
@@ -12,22 +12,22 @@ body{
    z-index: -1;
 }
 
-.informacoes{
+.informacoes {
    display: none;
 }
 
-.informacoes.ativa{
+.informacoes.ativa {
    display: block;
 }
 
-.conteudo{  
+.conteudo {
    display: flex;
    flex-direction: column;
    justify-content: space-evenly;
    min-height: 100vh;
 }
 
-.informacoes h1{
+.informacoes h1 {
    font-size: 35px;
    color: #ffffff;
    margin-bottom: 80px;
@@ -40,7 +40,7 @@ body{
    src: url(../fontes/GOT.ttf);
 }
 
-.informacoes .descricao{
+.informacoes .descricao {
    width: 49%;
    font-size: 24px;
    color: #ffffff;
@@ -50,12 +50,13 @@ body{
    padding-right: 15px;
 }
 
-.botoes-carrossel{
+.botoes-carrossel {
    display: flex;
    justify-content: center;
    gap: 20px;
 }
-.botoes-carrossel .botao{
+
+.botoes-carrossel .botao {
    background-color: #ffffff;
    width: 15px;
    height: 15px;
@@ -65,27 +66,28 @@ body{
    border-color: #ffffff;
 }
 
-.botoes-carrossel .botao.selecionado{
+.botoes-carrossel .botao.selecionado {
    background-color: #1d8346;
 }
 
-.imagem{
+.imagem {
    width: 100vw;
-   height:100vh;
+   height: 100vh;
    object-fit: cover;
    display: none;
 }
 
-.imagem.ativa{
+.imagem.ativa {
    display: block;
    animation: mudarImagem 0.7s;
 }
 
-@keyframes mudarimagem{
+@keyframes mudarimagem {
    from {
       opacity: 0.85;
    }
-   to{
+
+   to {
       opacity: 1;
    }
 }
